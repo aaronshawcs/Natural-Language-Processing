@@ -1,0 +1,14 @@
+Aaron Shaw
+CS404
+Question Two Report
+
+Below is the Question II output for my program:
+
+True Positives: 126	False Positives: 23
+True Negatives: 107	False Negatives: 4
+
+Precision: 0.845637583893
+Recall: 0.969230769231
+F-Score: 0.903225806452
+
+This Question was significantly easier to comprehend than the first one, which I was pleasantly surprised to discover. The biggest hurdle of this question was organizing the data into useful lists. To do this, I iterated through each file, and used a stripped-down version of my tokenizer from homework I to extract the tokens. Once I had all of this data, I used generate_vocab to get counts at varying levels; counts of words in all the data, all the training data, all the test spam data, and so on. Aside from that, the only thing necessary was setting up loops to iterate through everything. I was quite pleased with how well such a simple algorithm sorted through test data. 

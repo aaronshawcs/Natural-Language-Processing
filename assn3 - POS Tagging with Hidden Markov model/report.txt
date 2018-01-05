@@ -1,0 +1,69 @@
+Aaron Shaw
+CS404
+Homework Three Report
+
+Results:
+
+python CS404HW3.py
+....................
+Tagging accuracy (Viterbi decoding):86.158851994% (known: 93.5308641975% novel: 46.0505104782%)
+
+
+Results during troubleshooting -- these are currently commented out.
+
+...
+Sentence 68
+Tagger: ['###', 'N', 'N', 'M', 'V', 'I', 'I', 'D', 'J', 'N', '.', '###']
+Actual: ['###', 'J', 'N', 'M', 'V', 'R', 'I', 'D', 'J', 'N', '.', '###']
+Sentence 69
+Tagger: ['###', 'N', 'N', 'V', 'V', 'T', 'V', 'N', 'N', 'I', 'I', 'C', 'N', 'I', 'N', 'I', 'D', 'J', 'N', ',', 'I', 'N', 'N', 'I', 'J', 'I', 'C', 'N', ',', 'N', 'V', '.', '###']
+Actual: ['###', 'J', 'N', 'V', 'V', 'T', 'V', 'N', 'N', 'I', 'R', 'C', 'N', 'I', 'N', 'I', 'D', 'J', 'N', ',', 'I', 'N', 'N', 'I', 'J', 'I', 'C', 'N', ',', 'N', 'V', '.', '###']
+Sentence 70
+Tagger: ['###', 'T', 'V', 'J', 'N', 'N', ',', 'N', 'V', 'V', 'V', 'N', ',', 'R', 'I', 'N', ',', 'C', 'N', 'D', 'N', 'I', 'N', 'C', 'N', 'N', '.', '###']
+Actual: ['###', 'T', 'V', 'J', 'N', 'N', ',', 'N', 'V', 'V', 'V', 'N', ',', 'R', 'I', 'N', ',', 'C', 'V', 'D', 'N', 'I', 'N', 'C', 'N', 'N', '.', '###']
+Sentence 71
+Tagger: ['###', 'N', 'N', 'I', 'D', 'N', 'V', 'V', 'I', 'N', 'N', 'I', 'N', 'I', 'N', ',', 'J', 'I', 'N', ',', 'T', 'V', 'I', 'N', '.', '###']
+Actual: ['###', 'N', 'N', 'I', 'D', 'N', 'V', 'V', 'I', 'J', 'N', 'I', 'N', 'I', 'N', ',', 'J', 'I', 'N', ',', 'T', 'V', 'R', 'N', '.', '###']
+Sentence 72
+Tagger: ['###', 'N', 'V', 'R', 'V', 'I', 'D', 'N', 'N', 'N', ',', 'W', 'V', 'N', 'R', 'J', 'N', '.', '###']
+Actual: ['###', 'N', 'V', 'R', 'V', 'I', 'D', 'J', 'N', 'N', ',', 'W', 'V', 'N', 'R', 'R', 'J', '.', '###']
+Sentence 73
+Tagger: ['###', 'I', 'D', 'N', ',', 'N', 'V', 'I', 'N', '.', '###']
+Actual: ['###', 'I', 'D', 'N', ',', 'N', 'V', 'V', 'N', '.', '###']
+Sentence 74
+Tagger: ['###', 'N', ',', 'V', 'C', 'N', ',', 'I', 'N', ',', 'V', 'N', 'N', 'I', 'D', 'J', 'N', 'I', 'D', 'J', 'N', 'N', '.', '###']
+Actual: ['###', 'N', ',', 'N', 'C', 'N', ',', 'I', 'N', ',', 'V', 'J', 'N', 'I', 'D', 'J', 'N', 'I', 'D', 'J', 'N', 'N', '.', '###']
+...
+Sentence 188
+Tagger: ['###', 'I', 'V', 'P', 'D', 'J', 'J', 'N', 'I', 'D', 'D', 'N', 'P', 'N', 'N', ',', 'V', 'T', 'N', 'C', 'N', 'N', 'I', '.', '###']
+Actual: ['###', 'D', 'V', 'P', 'D', 'R', 'J', 'N', 'I', 'D', 'D', 'N', 'P', 'N', 'N', ',', 'V', 'T', 'N', 'C', 'N', 'N', 'N', '.', '###']
+Sentence 189
+Tagger: ['###', 'C', 'V', 'D', 'J', '.', '###']
+Actual: ['###', 'C', 'V', 'D', 'N', '.', '###']
+Sentence 190
+Tagger: ['###', 'N', 'N', 'V', 'D', 'N', 'N', ':', 'D', 'N', 'I', 'N', 'J', 'N', 'W', 'N', 'V', 'T', 'V', 'N', 'R', 'I', 'N', '.', '###']
+Actual: ['###', 'N', 'N', 'V', 'D', 'N', 'N', ':', 'D', 'N', 'I', 'J', 'J', 'N', 'W', 'N', 'V', 'T', 'V', 'N', 'J', 'I', 'J', '.', '###']
+Sentence 191
+Tagger: ['###', 'N', 'N', 'P', 'N', 'N', 'V', 'D', 'N', 'J', 'I', 'D', 'R', 'V', 'N', 'I', 'N', '.', '###']
+Actual: ['###', 'N', 'N', 'P', 'J', 'N', 'V', 'D', 'N', 'V', 'I', 'D', 'R', 'J', 'N', 'I', 'N', '.', '###']
+...
+Sentence 196
+Tagger: ['###', 'I', 'P', 'I', 'N', 'V', 'J', 'I', 'D', 'N', ',', 'C', 'J', 'N', 'N', 'I', 'D', 'N', 'I', 'N', 'N', '.', '###']
+Actual: ['###', 'D', 'V', 'I', 'N', 'V', 'J', 'I', 'D', 'N', ',', 'C', 'J', 'N', 'N', 'V', 'D', 'N', 'I', 'N', 'N', '.', '###']
+Sentence 197
+Tagger: ['###', 'C', 'N', ',', 'V', 'V', 'V', 'I', 'D', 'J', 'N', 'N', 'T', 'D', 'R', 'J', 'N', '.', '###']
+Actual: ['###', 'C', 'N', ',', 'N', 'V', 'V', 'I', 'D', 'N', 'N', 'N', 'T', 'D', 'R', 'J', 'C', '.', '###']
+...
+Sentence 200
+Tagger: ['###', '`', 'R', 'D', 'N', 'V', 'I', 'W', 'R', 'M', 'P', 'V', 'I', 'I', 'N', '.', "'", '###']
+Actual: ['###', '`', 'R', 'D', 'N', 'V', 'I', 'W', 'R', 'M', 'P', 'V', 'I', 'D', 'N', '.', "'", '###']
+...
+
+
+This assignment proved quite a challenge to take on by myself. I could not manage to make my tagger more accurate than the baseline tagger and use the necessary smoothing. My approach to this assignment was to first write functions to subdivide data into any possibly useful assortment I could think of. The first two I really made were the tag_to_tag and tag_to_word sets. tag_to_tag is a set that maps a tag to the list of tags it can transition to, and the probabilities of those transitions occuring. tag_to_word works similarly, mapping to the list of possible words that a tag could emit, as well as their probabilities. Then I reversed these, so for any word W word_from_tag returned the list of all tags that emit that word, as well as the probabilities and likewise for tag_from_tag. Ultimately I found this second pair of sets more useful than the others. I decided that I was going to tackle tagging of the test data sentence-by-sentence after struggling to wrap my head around a recursive model. As I built and rebuilt calculate_probabilities, I kept running into different problems. Eventually, though, I finally got results that appeared somewhat reasonable. They still arent as accurate as the baseline model, though, and I have to imagine I'm making a simple mistake somewhere in there. One thing I am NOT using is the raw data. I looked at it and originally used it, but since it's not tagged I ultimately could not find a use for it. Because, sure, the raw text file has words that the train data doesn't, but since it's not tagged it can't really be used for anything on the training end or testing end.
+
+If I were to start this from the top, I would plan out my data structures better; the real challenge, it seems, with Hidden Markov Models is keeping track of what goes where. Once you get a handle on that, they really are quite simple.
+
+Notable mistake: I tried to construct the tagger before working through the IceCream dataset. I think that your PDF was spot on with the suggestion of building the IceCream model first, then building upon that.
+
+Note: Aside from the main program, I made a "tags.txt" file for CS404HW3.py to use.

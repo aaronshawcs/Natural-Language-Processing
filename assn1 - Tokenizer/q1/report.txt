@@ -1,0 +1,109 @@
+Aaron Shaw
+CS404
+Question One Report
+
+Below is the Part I output for my program:
+
+Number of tokens: 373
+Number of word types: 206
+Most frequent 20 words:
+.	:	22 (5.8981233244%)
+,	:	20 (5.36193029491%)
+I	:	16 (4.28954423592%)
+a	:	8 (2.14477211796%)
+the	:	8 (2.14477211796%)
+of	:	7 (1.87667560322%)
+``	:	7 (1.87667560322%)
+and	:	7 (1.87667560322%)
+''	:	7 (1.87667560322%)
+'s	:	7 (1.87667560322%)
+;	:	6 (1.60857908847%)
+he	:	6 (1.60857908847%)
+it	:	5 (1.34048257373%)
+'ll	:	5 (1.34048257373%)
+his	:	4 (1.07238605898%)
+for	:	4 (1.07238605898%)
+to	:	4 (1.07238605898%)
+that	:	4 (1.07238605898%)
+him	:	3 (0.804289544236%)
+with	:	3 (0.804289544236%)
+Singletons (0.268096514745% of file each):
+all
+don't
+over
+years
+mile
+through
+gratified
+cold
+still
+[several, several singletons omitted]
+whiskers
+chance
+Woolper
+bleak
+land
+reflection
+You
+It
+One
+so
+daresay
+reflectively
+wind
+know
+
+
+Below is the Part II output for my program:
+
+generating token list...
+generating stop words...
+filtering tokens...
+generating token pairs...
+generating vocabulary...
+generating fullvocab...
+a. Number of Sentences: 59367
+b. Number of word tokens: 1403751
+c. Number of word types: 42148
+d. Word count and percentage of the 100 most frequent tokens in the vocabulary (including stopwords and punctuations):
+	1:	the	81590	(5.81%)
+	2:	,	73689	(5.25%)
+	3:	.	56751	(4.04%)
+	4:	of	40786	(2.91%)
+	5:	to	36573	(2.61%)
+	...
+	96:	had	1437	(0.1%)
+	97:	war	1432	(0.1%)
+	98:	states	1421	(0.1%)
+	99:	economy	1416	(0.1%)
+	100:	power	1393	(0.1%)
+e. Word count and percentage of the 100 most frequent tokens in the vocabulary (excluding stopwords and punctuations):
+	1:	--	5610	(0.93%)
+	2:	countries	2630	(0.43%)
+	3:	world	2362	(0.39%)
+	4:	government	2342	(0.39%)
+	5:	political	2330	(0.39%)
+	...
+	96:	case	575	(0.1%)
+	97:	back	569	(0.09%)
+	98:	iran	569	(0.09%)
+	99:	fiscal	569	(0.09%)
+	100:	bush	564	(0.09%)
+f. Number of singletons in the corpus: 18788
+g. Number of tokens in the vocabulary containing digits [0-9]: 11582
+h. Number of tokens in the vocabulary containing punctuation: 182911
+i. Number of tokens in the vocabulary containing both alpha [A-Za-z] and numerics [0-9]: 1692
+j. Frequency and percentage of the 100 most frequent word pairs in the corpus (excluding stopwords and punctuations):
+	1:	('united', 'states')	658	(0.11%)
+	2:	('middle', 'east')	369	(0.06%)
+	3:	('european', 'union')	355	(0.06%)
+	4:	('interest', 'rates')	354	(0.06%)
+	5:	('prime', 'minister')	347	(0.06%)
+	...
+	96:	('tax', 'cuts')	63	(0.01%)
+	97:	('young', 'people')	62	(0.01%)
+	98:	('&#45', '&#45')	62	(0.01%)
+	99:	('countries', '--')	61	(0.01%)
+	100:	('economic', 'development')	61	(0.01%)
+
+So this question was more or less pretty straightforward. I think the trickiest thing in part two was dealing with periods, because the tokenizer doesn't know what to do with a period until it's seen the next letter. I was pretty happy with how my tokenizer turned out. I had the tokenizer iterate through the letters of the file, changing its state between "in word", "not in word", and "period". My tokenizer handles elipses, titles, URLs, and carriage returns as exceptions. It flat-out ignores quotation marks and does not split contractions. It also does not treat the "--" token as punctuation, which I would change if I had the time. As for problems I had with this question, I had a big problem with run time. It takes quite a while to generate the vocabularies. That being said, I cannot tell what part of my vocabulary-generating algorithm is so expensive. Fortunately the data is accurate, and it works perfectly fast on smaller text files.  
